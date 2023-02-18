@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPES CSI LOGIN</title>
+    <link rel="Stylesheet" href="styles.css"> 
+    </head>
+    
+<body>
+<!-- <img src="images/upes_csi_logo-removebg-preview.png"> -->
+
+<!----------------ENTER BY PRIME ID-------------->
+
+<h1>UPES CSI Welcomes You!</h1>
+
+<button onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
+
+<div id="Login" class="modal">
+  
+  <form class="modal-content animate" action="C:\Users\Agrima\OneDrive\Desktop\Upes Csi D-Buggers\core.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('Login').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="uname" required>
+
+      <label for="psw"><b>Prime ID</b></label>
+      <input type="password" placeholder="Enter Prime Id" name="psw" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('Login');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<br>
+<br>
+
+<!----------------BECOME A PRIME MEMBER -------------->
+
+<button onclick="document.getElementById('Member').style.display='block'" style="width:auto;">Become a Member</button>
+
+<div id="Member" class="modal">
+  
+  <form class="modal-content animate" action="https://docs.google.com/forms/d/e/1FAIpQLSdwWtFGPrfcHv9VAbgG_AqYP9TfNRtGSsmUHYjVEWrCVwd1Aw/viewform?embedded=true">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('Member').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="uname" required>
+
+      <label for="psw"><b>Email ID</b></label>
+      <input type="text" placeholder="Enter Email Id" name="psw" required>
+
+      <label for="psw"><b>Year</b></label>
+        <select name="Year" id="Year">
+          <option value="first">First Year</option>
+          <option value="second">Second Year</option>
+          <option value="third">Third Year</option>
+          <option value="fourth">Fourth Year</option>
+        </select>
+            
+
+      <label for="psw"><b>Membership Type</b></label>
+      <select name="Number" id="Number">
+        <option value="one">One Year</option>
+        <option value="two">Two Years</option>
+        <option value="three">Three Years</option>
+        <option value="four">Four Years</option>
+      </select>
+        
+      <button type="submit">Proceed to Payment</button>
+     
+    </div>
+
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('Member');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<br>
+<br>
+<!----------------OPEN WEBSITE-------------->
+
+<form action="https://upescsi.in/">
+    <button class = "csi" type="submit">Click Here for Website</button>
+</form>
+</body>
+</html>
